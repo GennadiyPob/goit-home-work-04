@@ -101,21 +101,72 @@
 
 '''Зрізи'''
 
-my_list = [1, 1, 45, 57, 568, 235, 213, -346, -10, -45, 0, 100, 57]
+# my_list = [1, 1, 45, 57, 568, 235, 213, -346, -10, -45, 0, 100, 57]
 
-print(my_list[::-1]) #обернений список. Початок з останнього
+# print(my_list[::-1]) #обернений список. Початок з останнього
 
-print(my_list[-1]) # берем останній елемент. 
+# print(my_list[-1]) # берем останній елемент. 
 
-print(my_list[3:]) # від 3-го елемента і до кінця
+# print(my_list[3:]) # від 3-го елемента і до кінця
 
-print(my_list[:6]) # до 6-го елемента. 6 не включається.
+# print(my_list[:6]) # до 6-го елемента. 6 не включається.
 
-print(my_list[2:10]) # від 2-го до 9-го включно!
+# print(my_list[2:10]) # від 2-го до 9-го включно!
 
-print(my_list[2:10:2]) #від 2-го до 9-го включно через 2 елемента
+# print(my_list[2:10:2]) #від 2-го до 9-го включно через 2 елемента
 
-print(my_list[:6:-1]) # зворотній напрямок від останньго до 5-го включно!
+# print(my_list[:6:-1]) # зворотній напрямок від останньго до 6-го включно!
 
-print(my_list[:]) # друк всіх елементів в звичайному порядку 
+# print(my_list[:]) # друк всіх елементів в звичайному порядку 
+
+
+'''Словники'''
+
+# person = {'name': 'Oleh', 'age': 22, 'phone': '38(0**)***', 'married': False}
+# print(person)
+
+# # person.update({'location': 'Ukraine, Lviv', 'lang': 'ukr'}) #Додаємо ключі і значення
+# # print(person)
+
+# new_data = {'location': 'Ukraine, Lviv', 'lang': 'ukr'}
+# person.update(new_data) #Додаємо ключі і значення // Другий Спосіб
+# print(person)
+
+# person.pop('lang') #Видаляємо ключ. Значення також видаляється
+# print(person)
+
+# copy_person = person.copy()
+# print(copy_person)
+
+#Беремо значення зі словника. Якщо значення немає - виводимо значення після коми
+# print(person.get('name', 'Noname'))
+# print(person.get('phone', 'None'))
+# print(person.get('lang', 'Undefined'))
+
+# person = {'name': 'Oleh', 'age': 22, 'phone': '38(0**)***', 'married': False}
+# #не можна зробити словник в словнику, але можна зробити список в словнику
+# person.update({'secret': ['location', 'Ukraine', 'Lviv', 'lang', 'ukr']})
+# print(person)
+# print(person.get('secret', 'SECRET')) #Беремо значення зі словника.
+
+# person['age'] = 100
+# print(person)
+
+# dict_a = {'Alex':12, 'Olga':10}
+# dict_b = {'Boris':9, 'Dima': 10}
+# dict_c = {'Ira':11, 'Vova': 6}
+
+# #Створюємо новий словник, шляхом об'єднання трьох інших
+# dict_united = dict()
+# for value in (dict_a, dict_b, dict_c):
+#     dict_united.update(value)
+# print(dict_united)
+
+# #Створюємо новий словник, шляхом приєднання до одного
+# for value in (dict_b, dict_c):
+#     dict_a.update(value)
+# print(dict_a)
+
+'''Множини'''
+
 
