@@ -105,19 +105,57 @@
 # res = is_valid_pin_codes(pin_codes)
 # print(res)
 
-"""Task 10"""
+"""Task 10 - Генерація пароля з 8-ми символів""" 
 
-from random import randint
+# from random import randint
+
+# def get_random_password():
+#     new_password = ''
+#     i = 1
+#     while i < 9:
+#         random_num = randint(40, 126)
+#         new_password += chr(random_num)
+#         i += 1
+#     return new_password
+
+# new_password = get_random_password()
+
+# print(new_password)
+
+"""Task 11 - Перевірка надійності пароля""" 
+
+# def is_valid_password(password):
+#     if len(password) < 8:
+#         return False
+     
+#     isupper_symbol = any(char.isupper() for char in password)
+#     islower_symbol = any(char.islower() for char in password)
+#     isdigit_symbol = any(char.isdigit() for char in password)
+    
+#     return isupper_symbol and islower_symbol and isdigit_symbol
+             
+# password = 'QWERTY12'
+# print(is_valid_password(password)) 
+
+"""Task 11 (варіант 2) - Перевірка надійності пароля""" 
+
+# def is_valid_password(password):
+#     if len(password) != 8:
+#         return False
+
+#     has_upper = False
+#     has_lower = False
+#     has_num = False
+
+#     for ch in password:
+#         if ch.isupper():
+#             has_upper = True
+#         elif ch.islower():
+#             has_lower = True
+#         elif ch.isdigit():
+#             has_num = True
+
+#     return has_upper and has_lower and has_num
 
 
-def get_random_password():
-    new_password = ''
-    i = 1
-    while i < 8:
-        random_num = randint(40, 126)
-        new_password += chr(random_num)
-    return new_password
-
-new_password = get_random_password()
-
-print(new_password)
+    
