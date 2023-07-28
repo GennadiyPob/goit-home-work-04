@@ -56,32 +56,68 @@
 # #your_func(1,2,3,4)  
 # your_func(*[1,2,3,4])
 
-# Task 07
+"""Task 07"""
 
-points = {
-    (0, 1): 2,
-    (0, 2): 3.8,
-    (0, 3): 2.7,
-    (1, 2): 2.5,
-    (1, 3): 4.1,
-    (2, 3): 3.9,
-}
+# points = {
+#     (0, 1): 2,
+#     (0, 2): 3.8,
+#     (0, 3): 2.7,
+#     (1, 2): 2.5,
+#     (1, 3): 4.1,
+#     (2, 3): 3.9,
+# }
 
  
-def calculate_distance(coordinates):
-    if len(coordinates) <= 1:
-        return 0
+# def calculate_distance(coordinates):
+#     if len(coordinates) <= 1:
+#         return 0
 
-    total_distance = 0
-    for i in range(len(coordinates) - 1):
-        point_a = min(coordinates[i], coordinates[i + 1])
-        point_b = max(coordinates[i], coordinates[i + 1])
-        distance = points[(point_a, point_b)]
-        total_distance += distance
+#     total_distance = 0
+#     for i in range(len(coordinates) - 1):
+#         point_a = min(coordinates[i], coordinates[i + 1])
+#         point_b = max(coordinates[i], coordinates[i + 1])
+#         distance = points[(point_a, point_b)]
+#         total_distance += distance
 
-    return total_distance
+#     return total_distance
 
-quad_coordinates = [0, 1, 3, 2, 0]
-total_distance = calculate_distance(quad_coordinates)
-print("Загальна відстань проліту дрона:", total_distance)
+# quad_coordinates = [0, 1, 3, 2, 0]
+# total_distance = calculate_distance(quad_coordinates)
+# print("Загальна відстань проліту дрона:", total_distance)
     
+"""Task 09"""
+# def is_valid_pin_codes(pin_codes):
+#     if not pin_codes:   #Первірка на порожній список
+#         return False
+        
+#     list_of_pin_codes = set() #Створюємо пусту множину
+#     for elem in pin_codes:
+#         if len(elem) !=4 or not elem.isdigit(): #Перевірка на числа
+#             return False
+#         if elem in list_of_pin_codes: #Якщо пін вже є в списку - False
+#             return False
+            
+#         list_of_pin_codes.add(elem)
+    
+#     return True
+
+# pin_codes = [1234, 9012, 3456, 5678]
+# res = is_valid_pin_codes(pin_codes)
+# print(res)
+
+"""Task 10"""
+
+from random import randint
+
+
+def get_random_password():
+    new_password = ''
+    i = 1
+    while i < 8:
+        random_num = randint(40, 126)
+        new_password += chr(random_num)
+    return new_password
+
+new_password = get_random_password()
+
+print(new_password)
