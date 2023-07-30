@@ -157,5 +157,82 @@
 
 #     return has_upper and has_lower and has_num
 
+"""Task 12 Генерація і перевірка пароля""" 
 
-    
+# from random import randint
+
+# def get_random_password():
+#     result = ""
+#     count = 0
+#     while count < 8:
+#         random_symbol = chr(randint(40, 126))
+#         result = result + random_symbol
+#         count = count + 1
+#     return result
+
+
+# def is_valid_password(password):
+#     if len(password) != 8:
+#         return False
+
+#     has_upper = False
+#     has_lower = False
+#     has_num = False
+
+#     for ch in password:
+#         if ch.isupper():
+#             has_upper = True
+#         elif ch.islower():
+#             has_lower = True
+#         elif ch.isdigit():
+#             has_num = True
+
+#     return has_upper and has_lower and has_num
+
+
+# def get_password():
+#     i = 0
+#     while i < 100:
+#         get_random_password()
+#         if is_valid_password(password):
+#            return password 
+#         i += 1
+        
+"""Task 13 Сканування файлової системи """ 
+
+# from pathlib import Path
+
+# def scan_and_filter_files(directory):
+#     # Створення об'єкта Path для заданої директорії
+#     path = Path(directory)
+
+#     # Сканування файлів і папок в директорії
+#     files_and_dirs = list(path.iterdir())
+
+#     # Відфільтрування файлів та директорій
+#     files = [item.name for item in files_and_dirs if item.is_file()]
+#     dirs = [item.name for item in files_and_dirs if item.is_dir()]
+
+#     return tuple(files), tuple(dirs)
+
+# # Приклад виклику функції із поточною директорією
+# files_tuple, dirs_tuple = scan_and_filter_files('.')
+# print("Files:", files_tuple)
+# print("Directories:", dirs_tuple)    
+
+from pathlib import Path
+
+def parse_folder(path):
+    files = []
+    folders = []
+    p = Path('G:\GoIT Python 17 Projects\REPOSITORIES')
+    for i in p.iterdir():
+        if i is not p.is_dir():
+            files.append(i.name)
+        else:
+            folders.append(i.name)
+                
+    return files, folders
+
+p = Path()
+print(parse_folder(p))
