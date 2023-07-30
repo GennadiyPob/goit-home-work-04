@@ -167,6 +167,33 @@
 #     dict_a.update(value)
 # print(dict_a)
 
-'''Множини'''
+'''Множини 01:24'''
 
+# my_list = [1, 1, 45, 57, 568, 235, 213, -346, -10, -45, 0, 100, 57]
+# my_set = set(my_list)
+# print(my_set)
 
+# # my_set = set('Hi there')
+# # print(my_set)
+# my_list_new = sorted(list(my_set))
+# print(my_list)
+# print(my_list_new)
+
+# #ще один коротший варіант
+# print(sorted(list(set(my_list))))
+
+'''Множини 01:31'''
+
+my_set = {4, 6, 'Sam', 'Python', 100}
+print(my_set)
+
+my_set.add('Test')
+print(my_set)
+
+my_set.remove(6) # видаляє значення 6 з множини.
+print(my_set)
+
+my_set.discard('Test')  # видаляє значення Test з множини.
+print(my_set)
+
+'''Множини 01:37'''
