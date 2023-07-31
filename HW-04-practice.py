@@ -82,98 +82,98 @@
 #     print(f'Shuffle deck')
 
 
-from pathlib import Path
-import sys
+# from pathlib import Path
+# import sys
 
-p = Path(sys.argv[1])
+# p = Path(sys.argv[1])
 
-def parse_folder(path):
-    for elements in path.iterdir():
-        if elements.is_dir():
-            print(f'Parse folder: This is folder - {elements.name}')
-        if elements.is_fike():
-            print(f'Parse folder: This is file - {elements.name}')
+# def parse_folder(path):
+#     for elements in path.iterdir():
+#         if elements.is_dir():
+#             print(f'Parse folder: This is folder - {elements.name}')
+#         if elements.is_fike():
+#             print(f'Parse folder: This is file - {elements.name}')
 
-def parse_folder_recursion():
-    for elements in path.iterdir():
-        if elements.is_dir():
-            parse_folder_recursion(elements)
-        else:
-            print(f'parse file: This is file - {elements.name}')
+# def parse_folder_recursion():
+#     for elements in path.iterdir():
+#         if elements.is_dir():
+#             parse_folder_recursion(elements)
+#         else:
+#             print(f'parse file: This is file - {elements.name}')
 
 
 ''' Гра Hangman '''
 
-hangman_pics = [
-    """
-      +---+
-          |
-          |
-          |
-         ===""",
-    """
-      +---+
-      O   |
-          |
-          |
-         ===""",
-    """
-      +---+
-      O   |
-      |   |
-          |
-         ===""",
-    """
-      +---+
-      O   |
-     /|   |
-          |
-         ===""",
-    """
-      +---+
-      O   |
-     /|\  |
-          |
-         ===""",
-    """
-      +---+
-      O   |
-     /|\  |
-     /    |
-         ===""",
-    """
-      +---+
-      O   |
-     /|\  |
-     / \  |
-         ==="""
-]
+# hangman_pics = [
+#     """
+#       +---+
+#           |
+#           |
+#           |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#           |
+#           |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#       |   |
+#           |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#      /|   |
+#           |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#      /|\  |
+#           |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#      /|\  |
+#      /    |
+#          ===""",
+#     """
+#       +---+
+#       O   |
+#      /|\  |
+#      / \  |
+#          ==="""
+# ]
 
-words = ['python', 'poker', 'programing', 'sunflower', 'Ukraine']
+# words = ['python', 'poker', 'programing', 'sunflower', 'Ukraine']
 
-attemps = 6
-guessed = list()
-def print_word():
-    display_word = ''
-    for char in words:
-        display_word += str(char if char in guessed else '_')
+# attemps = 6
+# guessed = list()
+# def print_word():
+#     display_word = ''
+#     for char in words:
+#         display_word += str(char if char in guessed else '_')
 
-    print(display_word)
-    return display_word
+#     print(display_word)
+#     return display_word
 
-while attemps > 0:
-    print(hangman_pics[6 - attemps])
-    display_word = print_word()
+# while attemps > 0:
+#     print(hangman_pics[6 - attemps])
+#     display_word = print_word()
 
-    if '_' not in display_word:
-        print(f'Congratulation! You win this game and still alive. The guessed word was {word}')
-        break
-    guess = input('Guess a letter: ').upper()
+#     if '_' not in display_word:
+#         print(f'Congratulation! You win this game and still alive. The guessed word was {word}')
+#         break
+#     guess = input('Guess a letter: ').upper()
 
-    if quess in guessed:
-        print(f'You already guessed this letter')
-    elif guess in word:
-        print
+#     if quess in guessed:
+#         print(f'You already guessed this letter')
+#     elif guess in word:
+#         print
 
 
 
