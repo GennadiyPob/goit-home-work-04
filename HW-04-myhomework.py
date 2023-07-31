@@ -220,19 +220,29 @@
 # print("Files:", files_tuple)
 # print("Directories:", dirs_tuple)    
 
-from pathlib import Path
+'''Task 13/14'''
 
-def parse_folder(path):
-    files = []
-    folders = []
-    p = Path('G:\GoIT Python 17 Projects\REPOSITORIES')
-    for i in p.iterdir():
-        if i is not p.is_dir():
-            files.append(i.name)
-        else:
-            folders.append(i.name)
+# from pathlib import Path
+
+# def parse_folder(path):
+#     files = []
+#     folders = []
+#     p = Path('G:\GoIT Python 17 Projects\REPOSITORIES')
+#     for i in p.iterdir():
+#         if i.is_dir():
+#             folders.append(i.name)
+#         else:
+#             files.append(i.name)
                 
-    return files, folders
+#     return files, folders
 
-p = Path()
-print(parse_folder(p))
+# p = Path()
+# print(parse_folder(p))
+
+'''Task 14/14'''
+
+import sys
+for arg in sys.argv:
+    print(arg)
+
+    

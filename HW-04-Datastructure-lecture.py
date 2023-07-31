@@ -184,16 +184,20 @@
 
 '''Множини 01:31'''
 
-my_set = {4, 6, 'Sam', 'Python', 100}
-print(my_set)
+# my_set = {4, 6, 'Sam', 'Python', 100}
+# print(my_set)
 
-my_set.add('Test')
-print(my_set)
+# my_set.add('Test')
+# print(my_set)
 
-my_set.remove(6) # видаляє значення 6 з множини.
-print(my_set)
+# my_set.remove(6) # видаляє значення 6 з множини.
+# print(my_set)
 
-my_set.discard('Test')  # видаляє значення Test з множини.
-print(my_set)
+# my_set.discard('Test')  # видаляє значення Test з множини.
+# print(my_set)
 
 '''Множини 01:37'''
+
+
+
+
