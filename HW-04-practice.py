@@ -1,5 +1,45 @@
-
 ''' Списки. Практика 31/07/2023 '''
+
+''' Автоперевірка. Задача 07/14. Визначення відстані польоту дрону'''
+
+# points = {
+#     (0, 1): 2,
+#     (0, 2): 3.8,
+#     (0, 3): 2.7,
+#     (1, 2): 2.5,
+#     (1, 3): 4.1,
+#     (2, 3): 3.9,
+# }
+
+# def calculate_distance(coordinates):
+#     if len(coordinates) == 0:        #Якщо відстань між точками 0, повертаємо 0. 
+#         return 0
+#     result = 0
+#     for iterator in range(len(coordinates)):
+#         #print(coordinates[(coordinates[iterator], coordinates[iterator+1])])
+        
+#         try:
+#             result += points[(coordinates[iterator], coordinates[iterator+1])]
+#         except KeyError:
+#             result += points[(coordinates[iterator+1], coordinates[iterator])]
+
+#     return result
+
+''' Автоперевірка. Задача 08/14. Накопичення енергії гравця'''
+
+def game(terra, power):
+    #print(terra)
+    #print(power)
+    for i in range(len(terra)): 
+
+
+
+
+
+
+
+
+
 
 # def best_fit_line(data):
 # list_x = list()
